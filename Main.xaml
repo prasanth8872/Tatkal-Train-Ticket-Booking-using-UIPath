@@ -1,0 +1,672 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="816,8120" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="859.2,7845.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="username" />
+      <Variable x:TypeArguments="x:String" Name="password" />
+      <Variable x:TypeArguments="x:String" Name="smtpServer" />
+      <Variable x:TypeArguments="x:Int32" Name="smtpPort" />
+      <Variable x:TypeArguments="x:String" Name="smtpUser" />
+      <Variable x:TypeArguments="x:String" Name="smtpPassword" />
+      <Variable x:TypeArguments="x:String" Name="recipitentEmail" />
+      <Variable x:TypeArguments="x:String" Name="classes" />
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NApplicationCard_1</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="518.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[username]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[username]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="518.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[password]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[outputElement.Selector.Text]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="518.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[smtpServer]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">smtp.gmail.com</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="518.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[smtpPort]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">587</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="518.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[smtpUser]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">22ad045@drngpit.ac.in</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="518.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[smtpPassword]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">santosh8825</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="518.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[recipitentEmail]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[recipitentEmail = "gmail.com"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome IRCTC Next Generation eTicketing Syste" sap:VirtualizedContainerService.HintSize="518.4,7027.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[outputElement]" ScopeGuid="f79655a4-5533-48e8-9214-7be086907027" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,6787.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'LOGIN'" sap:VirtualizedContainerService.HintSize="451.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/train-search" CVScreenId="575f3b9a-f428-4a2f-a3e4-617913a63d2d" CvElementArea="387, 238, 88, 44" CvTextArea="399, 251, 58, 17" CvTextArgument="LOGIN" CvType="Button" DesignTimeRectangle="390, 241, 83, 39" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='Click here to Login in application' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Click here to Login in application' tag='A' type='' class='search_btn loginText ng-star-inserted' aaname=' LOGIN ' check:innerText='LOGIN' /&gt;" Guid="1daefdfc-d3a6-4be0-a364-fe85acb1d6f7" InformativeScreenshot="8f06ce00aeb2a1b130e29caeef427cab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT 9792010'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Text="Santoshdhandapani8825[k(Enter)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/train-search" CVScreenId="e4df84dc-b304-4621-a7de-7af2aea641bd" CvTextArea="359, 325, 78, 13" CvTextArgument="User Name" CvType="Text" DesignTimeRectangle="347, 369, 374, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='9792010' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='9792010' tag='INPUT' type='text' class='form-control input-box ng-valid ng-dirty ng-touched' placeholder='User Name' aaname='' /&gt;" Guid="402dcbab-646f-4434-a13b-ab828387ec1f" InformativeScreenshot="e1aeecee4702acda2529201c6c33da8a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT 6194316'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Text="Santosh@2005[k(Enter)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/train-search" CVScreenId="53fc94e4-4bdb-43d3-9b27-6ce30cb95a35" CvElementArea="344, 419, 380, 55" CvType="InputBox" DesignTimeRectangle="347, 422, 374, 50" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='6194316' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='6194316' tag='INPUT' type='password' class='form-control input-box ng-valid ng-dirty ng-touched' placeholder='Password' aaname='' /&gt;" Guid="63002133-a876-4498-bf25-d2e1c764297b" InformativeScreenshot="3a8dd5ede4d34c9a2ebca6df556cdf61.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT captcha'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/train-search" CVScreenId="13fe046d-8dff-4447-9469-e4b029739dea" CvTextArea="361, 799, 112, 21" CvTextArgument="Enter Captcha" CvType="Text" DesignTimeRectangle="347, 779, 377, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='captcha' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='captcha' tag='INPUT' type='text' class='payment_tex ng-pristine ng-valid ng-touched' placeholder='Enter Captcha' aaname='' /&gt;" Guid="9eac4d42-312c-4bdf-b2e6-78268fe191ad" InformativeScreenshot="24a17a94fd50dbec308899eb436dfa51.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SIGN IN'" sap:VirtualizedContainerService.HintSize="451.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/train-search" CVScreenId="d81e9302-a870-4f49-9e93-592d7f7ca7cd" CvElementArea="343, 916, 383, 53" CvTextArea="500, 932, 69, 18" CvTextArgument="SIGN IN" CvType="Button" DesignTimeRectangle="347, 918, 377, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='login_header_disable' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='login_header_disable' tag='BUTTON' type='submit' class='search_btn train_Search' aaname='SIGN IN' check:innerText='SIGN IN' /&gt;" Guid="fdc9cdbd-a9b0-45a1-8bda-42799bfa3e72" InformativeScreenshot="e37392e4767b9e876c223892f0f2df1a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,341.6" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,231.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClosePopup PopupException="{x:Null}" PopupHandled="{x:Null}" DisplayName="Close Popup" sap:VirtualizedContainerService.HintSize="382.4,171.2" sap2010:WorkflowViewState.IdRef="NClosePopup_1" PreferredButtons="[New String(){&quot;close&quot;}]" Version="V3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClosePopup>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Text="MGR CHENNAI CTL - MAS (CHENNAI)[k(Enter)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/train-search" DesignTimeRectangle="153, 588, 425, 51" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='ng-tns-c57-8 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input ng-star-inserted' aaname='' /&gt;" Guid="149385a3-d721-4555-856e-5c65a5b49c96" InformativeScreenshot="b43115bb3d81ec87bc98d0291fc92d3f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Text="COIMBATORE JN - CBE (COIMBATORE)[k(Enter)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/train-search" DesignTimeRectangle="153, 676, 425, 51" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='destination' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='destination' tag='INPUT' type='text' class='ng-tns-c57-9 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input ng-star-inserted' aaname='' /&gt;" Guid="c09bd6b1-e699-4fdd-8e3f-414caf766800" InformativeScreenshot="c7d11568fafdad3c9dc476407a0771f0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NSelectItem DisplayName="Select Item 'GENERAL'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="TATKAL" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="7">
+                  <x:String>GENERAL</x:String>
+                  <x:String>LADIES</x:String>
+                  <x:String>LOWER BERTH/SR.CITIZEN</x:String>
+                  <x:String>PERSON WITH DISABILITY</x:String>
+                  <x:String>DUTY PASS</x:String>
+                  <x:String>TATKAL</x:String>
+                  <x:String>PREMIUM TATKAL</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/train-search" CVScreenId="35da97f9-a9da-42dc-856c-bdf4c54d2f7b" CvTextArea="192, 777, 93, 17" CvTextArgument="GENERAL" CvType="Text" DesignTimeRectangle="134, 764, 425, 49" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='journeyQuota' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='journeyQuota' tag='DIV' type='' class='ng-tns-c65-12 ui-dropdown ui-widget ui-state-default ui-corner-all ui-state-focus' aaname='' /&gt;" Guid="a2156f95-d4bb-4be0-a682-b967b5423b3a" InformativeScreenshot="a3dd2813f17d9c5379c778c822318a39.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,351.2" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,240.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NSelectItem DisplayName="Select Item 'All Classes'" sap:VirtualizedContainerService.HintSize="382.4,180.8" sap2010:WorkflowViewState.IdRef="NSelectItem_6" Item="Second Sitting (2S)" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+                    <uix:NSelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="14">
+                        <x:String>All Classes</x:String>
+                        <x:String>Anubhuti Class (EA)</x:String>
+                        <x:String>AC First Class (1A)</x:String>
+                        <x:String>Vistadome AC (EV)</x:String>
+                        <x:String>Exec. Chair Car (EC)</x:String>
+                        <x:String>AC 2 Tier (2A)</x:String>
+                        <x:String>First Class (FC)</x:String>
+                        <x:String>AC 3 Tier (3A)</x:String>
+                        <x:String>AC 3 Economy (3E)</x:String>
+                        <x:String>Vistadome Chair Car (VC)</x:String>
+                        <x:String>AC Chair car (CC)</x:String>
+                        <x:String>Sleeper (SL)</x:String>
+                        <x:String>Vistadome Non AC (VS)</x:String>
+                        <x:String>Second Sitting (2S)</x:String>
+                      </scg:List>
+                    </uix:NSelectItem.Items>
+                    <uix:NSelectItem.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/train-list" CVScreenId="c31b8552-6a3c-429f-9e24-8e5958ce1216" CvTextArea="1021, 395, 100, 17" CvTextArgument="All Classes" CvType="Text" DesignTimeRectangle="983, 381, 235, 49" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-home&amp;gt;div&amp;gt;div&amp;gt;app-train-list&amp;gt;div&amp;gt;app-modify-search&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p-dropdown&amp;gt;div' parentid='divMain' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='divMain' tag='DIV' class='ng-tns-c65-30 ui-dropdown ui-widget ui-state-default ui-corner-all' aaname='' /&gt;" Guid="097fa802-d9a6-493d-8334-6893bdb98fcb" InformativeScreenshot="aa421ea54ca3d55428d6f13a3b3990a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NSelectItem.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NSelectItem>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Show Available Trains'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/train-list" CVScreenId="64884d34-6247-4dec-bba8-8d01f29c71e6" CvElementArea="681, 541, 230, 57" CvTextArea="697, 560, 198, 17" CvTextArgument="Show Available Trains" CvType="Button" DesignTimeRectangle="698, 558, 197, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Show Available Trains' class='hidden-xs' parentid='divMain' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Show Available Trains' class='hidden-xs' parentid='divMain' tag='SPAN' type='' check:innerText='Show Available Trains' /&gt;" Guid="30c9e6b6-6190-4797-9cbe-be1467b604e8" InformativeScreenshot="137a33bf007ad34edd1c4e34292061ae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="64884d34-6247-4dec-bba8-8d01f29c71e6" CvElementArea="681, 541, 230, 57" CvTextArea="697, 560, 198, 17" CvTextArgument="Show Available Trains" CvType="Button" DesignTimeRectangle="685, 543, 224, 54" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Show Available TrainsAvailable' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Show Available TrainsAvailable' tag='BUTTON' type='button' class='btnDefault ng-star-inserted' check:innerText='Show Available Trains' /&gt;" Guid="d7531ed0-48d1-4833-af7f-0f9939c58b20" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,387.2" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,276.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'AC 3 Tier (3A) Refresh'" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/train-list" CVScreenId="f575183e-b254-4a33-9c73-d6edea781301" CvElementArea="737, 737, 222, 90" CvType="Button" DesignTimeRectangle="737, 739, 223, 86" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='divMain' tag='TABLE' /&gt;&lt;webctrl class='pre-avl' tableCol='2' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='divMain' tag='TABLE' /&gt;&lt;webctrl class='pre-avl' type='' aaname='' tag='DIV' check:innerText='AC 3 Tier (3A)&amp;#xD;&amp;#xA;Refresh' /&gt;" Guid="89d649a0-5f2e-4bf4-99bf-12cf4c454659" InformativeScreenshot="6b97b9ba5ee67064355bb750dd277ea4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_7" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,351.2" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,240.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Book Now'" sap:VirtualizedContainerService.HintSize="382.4,180.8" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/train-list" CVScreenId="6b8fb08d-357e-45e3-839a-a38ecc581d61" CvElementArea="508, 807, 122, 59" CvTextArea="522, 826, 95, 18" CvTextArgument="Book Now" CvType="Button" DesignTimeRectangle="511, 810, 118, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' Book Now ' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Book Now ' tag='BUTTON' type='button' class='btnDefault train_Search ng-star-inserted' check:innerText='Book Now' /&gt;" Guid="0e46ba1a-41b0-4687-8b8f-5a30b030aee7" InformativeScreenshot="01818a3742ad8f43963d92cec923225d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="451.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/train-list" CVScreenId="162a5bb5-ab59-427e-b381-51e91b35761b" CvTextArea="902, 674, 28, 15" CvTextArgument="Yes" CvType="Text" DesignTimeRectangle="859, 664, 103, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Yes' parentid='divMain' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Yes' parentid='divMain' tag='SPAN' type='' class='ui-button-text ui-clickable' check:innerText='Yes' /&gt;" Guid="0fa253e8-cd2c-44fb-a6f0-cf8fc5ab6e29" InformativeScreenshot="f71b973bdfb70f737b580ac781a7d1bf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="162a5bb5-ab59-427e-b381-51e91b35761b" CvTextArea="902, 674, 28, 15" CvTextArgument="Yes" CvType="Text" DesignTimeRectangle="858, 663, 105, 38" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='ng-tns-c56-15 ui-confirmdialog-acceptbutton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ng-star-inserted' aaname='Yes' check:innerText='Yes' /&gt;" Guid="cc5f0639-ccc7-4ee6-9097-1b2202525c6b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Text="prasanth[k(Enter)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/psgninput" CVScreenId="01fcfda0-f089-4e8b-a60d-7eb35a292209" CvElementArea="48, 496, 310, 55" CvType="InputBox" DesignTimeRectangle="50, 499, 306, 51" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-role='searchbox' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='searchbox' tag='INPUT' type='text' class='ng-tns-c57-86 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input ng-star-inserted' placeholder='Passenger Name' aaname='' /&gt;" Guid="716d14ef-bf1b-46dd-a7f8-8063a7b8abc5" InformativeScreenshot="b319fa830ee0bb9ebe44e93287e077ec.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Text="[20.ToString() + &quot;[k(Enter)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/psgninput" CVScreenId="18b21793-52ca-4f6b-b473-2d66b99fc5a6" CvElementArea="358, 497, 103, 53" CvTextArea="372, 515, 30, 17" CvTextArgument="Age" CvType="Button" DesignTimeRectangle="361, 499, 99, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='number' class='form-control ng-dirty ng-invalid ng-touched' placeholder='Age' aaname='' /&gt;" Guid="8a298b77-6045-4188-8c84-2bf3553ad2a8" InformativeScreenshot="00596be9b87b53151190aa7676a1b917.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NSelectItem DisplayName="Select Item 'Gender'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="Male" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="4">
+                  <x:String>Gender</x:String>
+                  <x:String>Male</x:String>
+                  <x:String>Female</x:String>
+                  <x:String>Transgender</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/psgninput" CVScreenId="0d83837c-d14d-4dfa-a0f0-7f8aeab1ce6b" CvElementArea="462, 496, 207, 54" CvType="InputBox" DesignTimeRectangle="465, 499, 202, 50" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-control ng-pristine ng-invalid ng-star-inserted ng-touched' aaname='' /&gt;" Guid="8ed84ab9-27c1-4394-a55d-9adedb35383d" InformativeScreenshot="a489f263f70a716a02a9c0749f32489c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_8" />
+            <uix:NSelectItem DisplayName="Select Item 'No Preference'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_9" Item="No Preference" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="2">
+                  <x:String>No Preference</x:String>
+                  <x:String>Window Side</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/psgninput" CVScreenId="e70ffe2e-7600-464e-86b2-f94b4d55f67c" CvElementArea="981, 496, 311, 53" CvType="InputBox" DesignTimeRectangle="984, 499, 306, 50" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-home&amp;gt;div&amp;gt;div&amp;gt;app-passenger-input&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p-panel&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;app-passenger&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='form-control ng-pristine ng-valid ng-star-inserted ng-touched' aaname='' /&gt;" Guid="4ffa3d63-0bfd-49e5-b691-de8b96a7409b" ImageBase64="" InformativeScreenshot="29a2a06d66bf30a1264907bfafd61205.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pay through'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/psgninput" DesignTimeRectangle="47, 511, 1358, 84" DesignTimeScaleFactor="1.25" ElementType="TableRow" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='2' tag='TR' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TR' class='span3 col-xs-12 link ng-star-inserted' aaname='' check:innerText='Pay through BHIM/UPI&amp;#xD;&amp;#xA;Convenience Fee: ₹20/- + GST' /&gt;" Guid="732e2b6a-f060-486d-b4b3-183c6f31c5de" InformativeScreenshot="ca137efa5401b5a57ed2d53c215e0ae3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="47, 648, 1358, 84" ElementType="TableRow" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='2' tag='TR' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TR' class='span3 col-xs-12 link ng-star-inserted' aaname='' check:innerText='Pay through BHIM/UPI&amp;#xD;&amp;#xA;Convenience Fee: ₹20/- + GST' /&gt;" Guid="b9d41593-a56f-4858-8660-eaf674c03874" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/psgninput" CVScreenId="e56285d1-0aac-4e19-9803-b8182a47ad40" CvElementArea="127, 774, 111, 57" CvTextArea="140, 791, 85, 18" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="130, 776, 108, 53" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='train_Search btnDefault' aaname='Continue ' check:innerText='Continue' /&gt;" Guid="1859f9f4-4cd9-4ce1-8583-6f22ac15761b" InformativeScreenshot="47887914fe5a9da6a1616fa39c655a0c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:30" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/booking/reviewBooking" CVScreenId="9dc78cdd-200c-4247-b479-9369f1c934ad" CvElementArea="127, 667, 111, 58" CvTextArea="140, 686, 85, 17" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="130, 668, 108, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btnDefault train_Search' aaname='Continue ' check:innerText='Continue' /&gt;" Guid="5a453195-6a40-4368-b6b8-a907e1d6cd3d" InformativeScreenshot="0fb5ff50404b470b61286287dfdada50.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BHIM/ UPI/ USSD'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/payment/bkgPaymentOptions" CVScreenId="27b06262-b46c-451b-a28b-066c0eb4c497" CvTextArea="86, 801, 149, 17" CvTextArgument="BHIM/ UPI/ USSD" CvType="Text" DesignTimeRectangle="29, 701, 349, 66" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl idx='3' parentid='pay-type' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='pay-type' tag='DIV' class='bank-type col-xs-12 ng-star-inserted' aaname='' check:innerText='BHIM/ UPI/ USSD' /&gt;" Guid="ffff24ee-89ff-49aa-bc26-d4044e5b3eaf" ImageBase64="" InformativeScreenshot="e7252eb7a32eb56fa1ed6aa535a35f0a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_9" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pay &amp; Book'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.irctc.co.in/nget/payment/bkgPaymentOptions" CVScreenId="3a48e93c-8f5b-407d-9fd5-e11214012c07" CvElementArea="694, 824, 274, 53" CvTextArea="770, 840, 121, 22" CvTextArgument="Pay &amp; Book" CvType="Button" DesignTimeRectangle="696, 774, 270, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Pay &amp;amp; Book ' css-selector='body&amp;gt;app-root&amp;gt;app-home&amp;gt;div&amp;gt;div&amp;gt;app-payment-options&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;app-payment&amp;gt;div&amp;gt;button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Pay &amp;amp; Book ' type='button' tag='BUTTON' class='btn btn-primary hidden-xs ng-star-inserted' check:innerText='Pay &amp;amp; Book' /&gt;" Guid="fb6ad290-638f-4e33-8c85-9ee2b974b985" ImageBase64="" InformativeScreenshot="57ec2cd5c02f04f80be3589bdd9f6976.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <Delay Duration="00:01:00" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_10" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed'" sap:VirtualizedContainerService.HintSize="451.2,218.4" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f79655a4-5533-48e8-9214-7be086907027" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://securegw.paytm.in/theia/processTransaction?orderid=100005154269145" CVScreenId="480b684a-372f-431b-bc74-5230510afb72" CvElementArea="742, 617, 432, 65" CvTextArea="920, 640, 75, 18" CvTextArgument="Proceed" CvType="Button" DesignTimeRectangle="745, 618, 427, 62" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class=' btn btn-primary w100 pos-r _2fNU   ' aaname='Proceed' check:innerText='Proceed' /&gt;" Guid="c6ef1681-a0c5-4906-aa3e-426660f18255" InformativeScreenshot="1dd05a6722912cc4ae17fa2e022b93b7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Paytm Secure Online Payment Gateway' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="480b684a-372f-431b-bc74-5230510afb72" CvElementArea="742, 617, 432, 65" CvTextArea="920, 640, 75, 18" CvTextArgument="Proceed" CvType="Button" DesignTimeRectangle="921, 639, 75, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Proceed' parentid='ptm-login' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Proceed' parentid='ptm-login' tag='SPAN' type='' class='' check:innerText='Proceed' /&gt;" Guid="4712505d-212b-4b1e-8626-768c173960d1" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="9e_Xj2ceWEqwGHg6EV_lkg" IconBase64="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" InformativeScreenshot="0b2c249cd2587aaa0900ceb1a34b69cf.jpg" Reference="4YUZXgDfsUKZzqy5P6OwmA/-JAdXvSraE-_PHAJrYu17A" Selector="&lt;html app='chrome.exe' title='IRCTC Next Generation eTicketing System' /&gt;" Title="IRCTC Next Generation eTicketing System" Url="https://www.irctc.co.in/nget/train-search" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
